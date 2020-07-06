@@ -1,0 +1,180 @@
+﻿/*@import
+  'vendors/normalize';*/
+/**
+ * Set up a decent box model on the root element
+ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+html {
+  box-sizing: border-box; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styles for links
+ */
+/*a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}*/
+/**
+ * Basic typography style for copy text
+ */
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+a,
+a:visited {
+  color: inherit; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.text-primary {
+  color: #92CCCC !important; }
+
+.border-div {
+  border: 1px solid #92CCCC;
+  padding: 12px 20px;
+  border-radius: 5px; }
+
+.navigation {
+  padding-left: 0; }
+  .navigation .logo {
+    width: 8.75rem;
+    height: 2.5rem; }
+  .navigation .navbar-brand {
+    margin-right: 1.875rem; }
+  .navigation .navbar-nav li {
+    margin-right: 1.875rem; }
+  .navigation .navbar-nav a {
+    color: #92CCCC;
+    font-weight: bold; }
+
+.centered-flex {
+  color: #92CCCC; }
+  .centered-flex input {
+    color: #92CCCC !important; }
+  .centered-flex .btc-input {
+    width: 5.625rem; }
+  .centered-flex img {
+    width: 7.5rem;
+    height: 7.5rem; }
+
+.button-container {
+  display: flex;
+  align-items: center; }
+  .button-container button {
+    margin-right: 0.9375rem; }
+  .button-container p {
+    margin: 0;
+    font-size: 0.75rem; }
+
+.btn-primary {
+  background-color: #92CCCC !important;
+  font-weight: bold;
+  border: none;
+  outline: none !important;
+  color: black !important;
+  padding: 0.625rem 1.25rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) !important; }
+
+.copy-link-btn {
+  width: 100%;
+  border: 0.0625rem solid #92CCCC;
+  padding: 0.9375rem 1.25rem;
+  color: #92CCCC !important;
+  font-weight: bold; }
+
+select {
+  width: auto !important;
+  height: auto !important;
+  align-self: baseline;
+  border: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+.input-bottom-text {
+  transform: translateY(-0.4375rem); }
+  .input-bottom-text input {
+    border: none;
+    border-bottom: 0.125rem solid #92CCCC !important;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none !important;
+    text-align: center;
+    font-weight: bold;
+    color: #92CCCC !important; }
+  .input-bottom-text .text {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+
+.custom-row > *:not(:last-child) {
+  margin-right: 0.625rem; }
+
+.custom-row input[type=date] {
+  align-self: baseline;
+  width: 9.375rem;
+  color: #92CCCC; }
+
+.custom-row * {
+  white-space: nowrap; }
+
+.custom-row label {
+  font-weight: bold; }
+
+.right-image-container img {
+  height: 100vh;
+  object-fit: cover; }
+
+.copy-link-container > div {
+  margin-top: 0.3125rem; }
+
+.copy-link-container span {
+  font-size: 0.75rem; }
+
+.copy-link-container .social-icons > *:not(:last-child) {
+  margin-right: 0.625rem; }
+
+.bb-input {
+  border: none;
+  border-bottom: 0.125rem solid #92CCCC !important;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none !important;
+  text-align: center;
+  font-weight: bold;
+  color: #92CCCC !important; }
