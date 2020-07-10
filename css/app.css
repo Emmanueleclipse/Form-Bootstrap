@@ -1,4 +1,4 @@
-﻿/*@import
+/*@import
   'vendors/normalize';*/
 /**
  * Set up a decent box model on the root element
@@ -91,6 +91,32 @@ a:visited {
     width: 7.5rem;
     height: 7.5rem; }
 
+.challenge-rule-text {
+  font-style: italic; }
+
+.fab {
+  color: dodgerblue; }
+  .fab:hover {
+    color: black; }
+
+.pie-container img {
+  transform: translateX(-60px); }
+
+.pie-container > div {
+  transform: translateX(-50px); }
+
+@media (max-width: 768px) {
+  .page-4 .copy-link-container.w-50 {
+    width: 100% !important; } }
+
+.page-1 .custom-row,
+.page-2 .custom-row {
+  flex-wrap: wrap !important; }
+  @media (max-width: 768px) {
+    .page-1 .custom-row *,
+    .page-2 .custom-row * {
+      white-space: normal; } }
+
 .button-container {
   display: flex;
   align-items: center; }
@@ -107,7 +133,7 @@ a:visited {
   outline: none !important;
   color: black !important;
   padding: 0.625rem 1.25rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 5px 5px 0px black !important;
   white-space: nowrap; }
 
 .copy-link-btn {
