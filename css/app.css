@@ -1,4 +1,4 @@
-/*@import
+﻿/*@import
   'vendors/normalize';*/
 /**
  * Set up a decent box model on the root element
@@ -79,7 +79,8 @@ a:visited {
     margin-right: 1.875rem; }
   .navigation .navbar-nav a {
     color: #92CCCC;
-    font-weight: bold; }
+    font-weight: bold;
+    white-space: nowrap; }
 
 .centered-flex {
   color: #92CCCC; }
@@ -116,6 +117,15 @@ a:visited {
     .page-1 .custom-row *,
     .page-2 .custom-row * {
       white-space: normal; } }
+
+.container > .row {
+  flex-wrap: nowrap !important; }
+  .container > .row > .col-md-5 {
+    padding-right: 0 !important;
+    flex: 0 0 50.666667% !important;
+    max-width: 100%; }
+    .container > .row > .col-md-5 img {
+      width: 100% !important; }
 
 .button-container {
   display: flex;
